@@ -14,4 +14,9 @@ class Program
         int birthYear;
         PromtUserBirthYear(out birthYear);
     }
+
+    static string DisplayWelcomeMessage()
+    {
+        Console.WriteLine("Welcome to the program!");
+    }
 }
