@@ -15,8 +15,10 @@ class Program
         PromtUserBirthYear(out birthYear);
     }
 
-    static string DisplayWelcomeMessage()
+    static void DisplayWelcomeMessage()
     {
         Console.WriteLine("Welcome to the program!");
     }
+
+    static string PromptUserName()
 }
