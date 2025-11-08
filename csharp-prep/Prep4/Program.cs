@@ -15,23 +15,27 @@ class Program
         {
             Console.WriteLine("Enter a list of numbers, type 0 when finished.");
 
-            Console.WriteLine("Enter number: ");
+            //Console.WriteLine("Enter number: ");
             string userInput = Console.ReadLine();
             int number = int.Parse(userInput);
 
             if (number != 0)
             {
-                numbers.Add(number);
+                numbers.Add(userNumber);
             }
         }
 
-        int totalSum = numbers.Sum();
-        Console.WriteLine($"The sume is: {totalSum}");
+        int Sum = 0;
+        foreach (int number in numbers)
+        {
+            Sum += number;
+        }
+        Console.WriteLine($"The sume is: {Sum}");
 
-        double ListAverage = numbers.Average();
-        Console.WriteLine($"The average is: {ListAverage}");
+        //double ListAverage = numbers.Average();
+        //Console.WriteLine($"The average is: {ListAverage}");
 
-        int maximunNumber = numbers.Max();
-        Console.WriteLine($"The largest number is: {maximunNumber}");
+        //int maximunNumber = numbers.Max();
+        //Console.WriteLine($"The largest number is: {maximunNumber}");
     }
 }
