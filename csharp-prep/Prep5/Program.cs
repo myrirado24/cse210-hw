@@ -33,7 +33,7 @@ class Program
         return name;
     }
 
-    static string PromptUserNumber()
+    static int PromptUserNumber()
     {
         Console.Write("What is your favorite number: ");
         int number = int.Parse(Console.ReadLine());
