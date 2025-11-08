@@ -26,12 +26,12 @@ class Program
         }
 
         int totalSum = numbers.Sum();
-        Console.WriteLine($"");
+        Console.WriteLine($"The sume is: {totalSum}");
 
         double ListAverage = numbers.Average();
-        Console.WriteLine($"");
+        Console.WriteLine($"The average is: {ListAverage}");
 
         int maximunNumber = numbers.Max();
-        Console.WriteLine($"")
+        Console.WriteLine($"The largest number is: {maximunNumber}");
     }
 }
