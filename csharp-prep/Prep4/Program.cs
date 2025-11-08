@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.Reflection.Emit;
 
 class Program
 {
@@ -12,7 +14,7 @@ class Program
         while (userNumber != 0)
         {
             Console.WriteLine("Enter a list of numbers, type 0 when finished.");
-            
+
             Console.WriteLine("Enter number: ");
             string userInput = Console.ReadLine();
             int number = int.Parse(userInput);
@@ -22,5 +24,14 @@ class Program
                 numbers.Add(number);
             }
         }
+
+        int totalSum = numbers.Sum();
+        Console.WriteLine($"");
+
+        double ListAverage = numbers.Average();
+        Console.WriteLine($"");
+
+        int maximunNumber = numbers.Max();
+        Console.WriteLine($"")
     }
 }
