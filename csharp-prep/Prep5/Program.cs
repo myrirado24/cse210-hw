@@ -1,4 +1,5 @@
 using System;
+using System.Globalization;
 
 class Program
 {
@@ -10,9 +11,13 @@ class Program
 
         string userName = PromptUserName;
         int userNumber = PromptUserNumber;
+
         int squaredNumber = SquareNumber(userNumber);
+        
         int birthYear;
         PromtUserBirthYear(out birthYear);
+
+        DisplayResult(userName, squaredNumber, birthYear);
     }
 
     static void DisplayWelcomeMessage()
@@ -22,9 +27,17 @@ class Program
 
     static string PromptUserName()
     {
-        Console.WriteLine("Please enter your name: ");
+        Console.Write("Please enter your name: ");
         string name = Console.ReadLine();
 
         return name;
+    }
+
+    static string PromptUserNumber()
+    {
+        Console.Write("What is your favorite number: ");
+        int number = int.Parse(Console.ReadLine());
+
+        return number;
     }
 }
