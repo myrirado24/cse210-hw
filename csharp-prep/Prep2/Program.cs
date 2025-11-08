@@ -24,16 +24,25 @@ class Program
         {
             letter = "C";
         }
-        else if (persent >= 80)
+        else if (persent >= 60)
         {
             letter = "D";
         }
         else
         {
-            letter = "F"
+            letter = "F";
         }
 
         Console.WriteLine($"Your grade is {letter}.");
+
+        if (persent >= 70)
+        {
+            Console.WriteLine("You passed the class!!!");
+        }
+        else
+        {
+            Console.WriteLine("You didn't pass the class. :(");
+        }
 
     }
 }
