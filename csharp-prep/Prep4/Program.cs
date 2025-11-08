@@ -7,15 +7,20 @@ class Program
         Console.WriteLine("Hello Prep4 World!");
 
         List<int> numbers = new List<int>();
+        int userNumber = -1;
 
-        Console.WriteLine("Enter a list of numbers, type 0 when finished.");
-
-        while ()
+        while (userNumber != 0)
         {
+            Console.WriteLine("Enter a list of numbers, type 0 when finished.");
+            
             Console.WriteLine("Enter number: ");
-            string number = Console.ReadLine();
+            string userInput = Console.ReadLine();
+            int number = int.Parse(userInput);
 
-            if ()
+            if (number != 0)
+            {
+                numbers.Add(number);
+            }
         }
     }
 }
