@@ -10,27 +10,30 @@ class Program
         string grade = Console.ReadLine();
         int persent = int.Parse(grade);
 
+        string letter = "";
+
         if (persent >= 90)
         {
-            Console.WriteLine("A");
+            letter = "A";
         }
         else if (persent >= 80)
         {
-            Console.WriteLine("B");
+            letter = "B";
         }
         else if (persent >= 70)
         {
-            Console.WriteLine("C");
+            letter = "C";
         }
         else if (persent >= 80)
         {
-            Console.WriteLine("D");
+            letter = "D";
         }
         else
         {
-            Console.WriteLine("F");
+            letter = "F"
         }
-    
+
+        Console.WriteLine($"Your grade is {letter}.");
 
     }
 }
