@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Reflection.Emit;
 
 class Program
@@ -17,25 +18,32 @@ class Program
 
             //Console.WriteLine("Enter number: ");
             string userInput = Console.ReadLine();
-            int number = int.Parse(userInput);
+            userNumber = int.Parse(userInput);
 
-            if (number != 0)
+            if (userNumber != 0)
             {
                 numbers.Add(userNumber);
             }
         }
 
-        int Sum = 0;
+        int sum = 0;
         foreach (int number in numbers)
         {
-            Sum += number;
+            sum += number;
         }
-        Console.WriteLine($"The sume is: {Sum}");
+        Console.WriteLine($"The sume is: {sum}");
 
-        //double ListAverage = numbers.Average();
-        //Console.WriteLine($"The average is: {ListAverage}");
+        float average = ((float)sum) / numbers.Count;
+        Console.WriteLine($"The average is: {average}");
 
-        //int maximunNumber = numbers.Max();
-        //Console.WriteLine($"The largest number is: {maximunNumber}");
+        int max = numbers[0];
+        foreach (int number in numbers)
+        {
+            if (number > max)
+            {
+                max = number;
+            }
+        }
+        Console.WriteLine($"The largest number is: {max}");
     }
 }
