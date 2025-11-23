@@ -20,4 +20,13 @@ public class Reference
         _firstVerse = firstVerse;
         _lastVerse = 0;
     }
+
+    public string GetReference()
+    {
+        if (_lastVerse == 0)
+        {
+            string refence = $"{book} {_chapter}:{_fir}"
+        }
+    }
+
 }
