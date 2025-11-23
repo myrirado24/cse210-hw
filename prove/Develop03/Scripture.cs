@@ -7,5 +7,11 @@ public class Scripture
     private int _firstVerse;
     private int _lastVerse;
 
-    
+    public Reference()
+    {
+        _book = "";
+        _charpter = 0;
+        _firstVerse = 0;
+        _lastVerse = 0;
+    }
 }
