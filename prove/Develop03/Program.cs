@@ -11,5 +11,10 @@ class Program
         Scripture s = new Scripture("Be ye mindful always of his covenant; the word which he commanded to a thousand generations;");
         Reference r = new Reference("1 Chornicles", 16, 15);
         bool finished = false;
+
+        while (s.WordLeft() > 0 || finished)
+        {
+            
+        }
     }
 }
