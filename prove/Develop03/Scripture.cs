@@ -14,4 +14,12 @@ public class Scripture
         _firstVerse = 0;
         _lastVerse = 0;
     }
+
+    public Reference(string book, int chapter, int _firstVerse)
+    {
+        _book = book;
+        _charpter = chapter;
+        _firstVerse = firstVerse;
+        _lastVerse = 0;
+    }
 }
